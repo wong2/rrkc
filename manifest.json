@@ -10,7 +10,7 @@
         "48": "images/chuan.png"
     },
     "content_scripts": [{
-        "matches": ["http://www.renren.com/*", "http://guide.renren.com/*"],
+        "matches": ["http://*.renren.com/*"],
         "css": ["css/inject.css"],
         "js": [
             "scripts/inject.js"
