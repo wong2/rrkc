@@ -1,5 +1,10 @@
 !function(){
 
+    // 只在首页执行
+    if(!window.asyncHTMLManager){
+        return;
+    }
+
     filepicker.setKey("AvP-U86sFQfmHgF1EQs0Bz");
 
     var serialize = function(obj) {
