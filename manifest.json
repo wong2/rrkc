@@ -8,7 +8,6 @@
     },
     "content_scripts": [{
         "matches": ["http://*.renren.com/*"],
-        "css": ["css/inject.css"],
         "js": [
             "scripts/inject.js"
         ],
