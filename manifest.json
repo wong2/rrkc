@@ -1,0 +1,25 @@
+{
+    "name": "人人快传",
+    "version": "1.0.0",
+    "description": "上传网络上的图片到人人相册",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "icons": {
+        "48": "images/chuan.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://www.renren.com/*", "http://guide.renren.com/*"],
+        "css": ["css/inject.css"],
+        "js": [
+            "scripts/inject.js"
+        ],
+        "run_at": "document_end"
+    }],
+    "web_accessible_resources": ["scripts/filepicker.js", "scripts/main.js"],
+    "permissions": [
+        "http://*.renren.com/",
+        "http://imgproxy.sinaapp.com/"
+    ]
+}
